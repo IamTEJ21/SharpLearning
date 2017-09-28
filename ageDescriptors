@@ -1,6 +1,5 @@
 using System;
-
-namespace ageDescriptors
+namespace ConsoleApplication1
 {
     class Program
     {
@@ -8,31 +7,42 @@ namespace ageDescriptors
         {
             // Asks user's age
             int age = Convert.ToInt32(Console.ReadLine());
-            if (age > 18) {
-                if (age > 150){
-               Console.WriteLine("You're Immortal??!"); //Input is over 150
+            if (age > 18)
+            {
+                if (age > 150)
+                {
+                    Console.WriteLine("You're Immortal??!"); //Input is over 150
                 }
-            else {
-                Console.WriteLine("You're an adult!"); // Input is over 18
+                else
+                {
+                    Console.WriteLine("You're an adult!"); // Input is over 18
                 }
             }
-            
-            else{
-                if (age > 14){
+
+            else
+            {
+                if (age > 14)
+                {
                     Console.WriteLine("You're but a teenager!"); // Input is over 14 and failed check for >18
                 }
-                
-            else{
-                if (age > 0){
-                    Console.WriteLine("You're just a kid!"); // Input is over 0 but failed check for >14
-                
-                }
-            else{
-                Console.WriteLine("You've not been born!!"); // Number is 0 or lower
-            }
+
+                else
+                {
+                    if (age > 0)
+                    {
+                        Console.WriteLine("You're just a kid!"); // Input is over 0 but failed check for >14
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("You've not been born!!"); // Number is 0 or lower
+                    }
+                    // Has the user press a key to close the Cmd
+                    Console.WriteLine("Press enter to close...");
+                    Console.ReadLine();
                 }
             }
         }
-            
+
     }
 }
